@@ -20,6 +20,7 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -49,7 +50,6 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-cover/
 
 # Translations
 *.mo
@@ -72,7 +72,6 @@ instance/
 docs/_build/
 
 # PyBuilder
-.pybuilder/
 target/
 
 # Jupyter Notebook
@@ -83,9 +82,7 @@ profile_default/
 ipython_config.py
 
 # pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
+.python-version
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
@@ -94,22 +91,7 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
 # Celery stuff
@@ -124,10 +106,10 @@ celerybeat.pid
 .venv
 env/
 venv/
-venv_py39/
 ENV/
 env.bak/
 venv.bak/
+venv_py39/
 
 # Spyder project settings
 .spyderproject
@@ -147,150 +129,63 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# pytype static type analyzer
-.pytype/
+# Data Science / ML specific
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
 
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be added to the global gitignore or merged into this project gitignore.  For a PyCharm
-#  project, it is recommended to use the general .gitignore template.
-#  https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
-
-.idea/
-*.iws
-*.iml
-*.ipr
-out/
-
-# Visual Studio Code
-.vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-
-# Local History for Visual Studio Code
-.history/
-
-# Built Visual Studio Code Extensions
-*.vsix
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Windows
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-
-# Dump file
-*.stackdump
-
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# Data Science & ML specific
-# Large datasets (uncomment if you don't want to track large datasets)
+# Dataset files (uncomment if you want to ignore large datasets)
 # *.csv
 # *.json
 # *.xlsx
 # *.xls
-# *.parquet
-# *.h5
-# *.hdf5
 
 # Model files
-*.pkl
-*.pickle
-*.joblib
 *.model
-*.h5
-*.pb
-*.onnx
+*.weights
+*.pt
+*.pth
 
-# Tensorboard logs
-runs/
-logs/
-tensorboard/
+# Visualization outputs
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
 
-# MLflow
-mlruns/
-mlartifacts/
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Weights & Biases
-wandb/
-
-# DVC
-.dvc
-
-# Plotly offline plots
-*.html
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Temporary files
 *.tmp
 *.temp
-*~
-
-# API keys and secrets
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-secrets.py
-config.ini
-credentials.json
-
-# Output folders
-output/
-results/
-figures/
-plots/
-models/
-checkpoints/
-
-# Backup files
 *.bak
 *.backup
+
+# Log files
+*.log
+
+# Output files
+output/
+results/
+plots/
+
+# Generated datasets
+*_processed.csv
+*_final.csv
+*_cleaned.csv

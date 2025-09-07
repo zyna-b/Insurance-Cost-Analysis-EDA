@@ -173,8 +173,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [@zyna-b](https://github.com/zyna-b)
+- LinkedIn: [Zainab Hamid](https://linkedin.com/in/zainab-hamid-187a18321/)
 
 ## 🙏 Acknowledgments
 
@@ -185,5 +185,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 ⭐ **Star this repository if you found it helpful!**
-
-#DataScience #EDA #Insurance #Python #MachineLearning #Statistics #DataAnalysis
