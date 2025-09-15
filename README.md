@@ -247,7 +247,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Zainab Hamid**
 - 🐙 GitHub: [@zyna-b](https://github.com/zyna-b)
 - 💼 LinkedIn: [Zainab Hamid](https://linkedin.com/in/zainab-hamid-187a18321/)
-- 📧 Email: [Contact for collaborations]
+- 📧 Email: [zainabhamid2468@gmail.com](mailto:zainabhamid2468@gmail.com)
 
 ## 📊 Keywords
 
